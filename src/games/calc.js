@@ -14,8 +14,8 @@ const calc = (randomSign, number1, number2) => {
 };
 
 const userNumber = () => {
-  const number1 = randomNumber(100);
-  const number2 = randomNumber(100);
+  const number1 = randomNumber(1, 100);
+  const number2 = randomNumber(1, 100);
   const arr = ['+', '-', '*'];
   const index = randomNumber(arr.length - 1);
   const randomSign = arr[index];
