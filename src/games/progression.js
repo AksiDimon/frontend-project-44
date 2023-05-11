@@ -9,7 +9,7 @@ const userNumber = () => {
   const randomStep = randomNumber(2, 5); // задаем число прогрессии
 
   for (let i = 0; i < randomStep * 10; i += randomStep) { // проход по массиву
-    arr.push(length + i); // пушим в массив каждое значание с шагом randomStep что бы шаг  од чисел был нужной велечины
+    arr.push(length + i);
   }
 
   const hiddenNumber = randomNumber(1, 9); // скрытый номер

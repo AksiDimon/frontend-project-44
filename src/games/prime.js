@@ -19,6 +19,6 @@ const userNumber = () => {
 };
 
 const game = () => {
-  allGame(gameRules, userNumber,);
+  allGame(gameRules, userNumber);
 };
 export default game;

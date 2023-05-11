@@ -4,13 +4,15 @@ import randomNumber from '../randomNumber.js';
 const gameRules = 'What is the result of the expression?';
 
 const calc = (randomSign, number1, number2) => {
+  let result = 0;
   if (randomSign === '+') {
-    return number1 + number2;
+    result = number1 + number2;
   } if (randomSign === '-') {
-    return number1 - number2;
+    result = number1 - number2;
   } if (randomSign === '*') {
-    return number1 * number2;
+    result = number1 * number2;
   }
+  return result;
 };
 
 const userNumber = () => {
