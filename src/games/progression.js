@@ -15,9 +15,9 @@ const userNumber = () => {
   const hiddenNumber = randomNumber(1, 9); // скрытый номер
   const unknowCloseNum = arr[hiddenNumber]; // и способом рандом ищем где закрыть цифру ..
   arr[hiddenNumber] = '..';
-  const question = arr.join('  ').toString();
+  const question = arr.join(' ');
 
-  return [question, unknowCloseNum.toString()];
+  return [question, unknowCloseNum];
 };
 
 const game = () => {
