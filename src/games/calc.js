@@ -17,7 +17,7 @@ const userNumber = () => {
   const number1 = randomNumber(1, 100);
   const number2 = randomNumber(1, 100);
   const arr = ['+', '-', '*'];
-  const index = randomNumber(arr.length - 1);
+  const index = randomNumber(0, arr.length - 1);
   const randomSign = arr[index];
   const question = `${number1} ${randomSign} ${number2}`;
   const result = calc(randomSign, number1, number2);
