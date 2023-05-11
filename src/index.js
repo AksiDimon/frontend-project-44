@@ -16,6 +16,6 @@ const allGame = (gameRules, userNumber) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 export default allGame;
