@@ -26,7 +26,7 @@ const userNumber = () => {
   return [question, result];
 };
 
-const calcGame = () => {
+const playGame = () => {
   allGame(gameRules, userNumber);
 };
-export default calcGame;
+export default playGame;
