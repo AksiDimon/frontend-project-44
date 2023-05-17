@@ -1,5 +1,5 @@
-import allGame from '../index.js';
-import randomNumber from '../randomNumber.js';
+import createForAllGame from '../index.js';
+import getRandomNumber from '../utils.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -13,12 +13,12 @@ const isPrime = (number) => {
 };
 
 const userNumber = () => {
-  const number = randomNumber(2, 100);
+  const number = getRandomNumber(2, 100);
   const answer = isPrime(number) ? 'yes' : 'no';
   return [number, answer];
 };
 
-const game = () => {
-  allGame(gameRules, userNumber);
+const playGame = () => {
+  createForAllGame(gameRules, userNumber);
 };
-export default game;
+export default playGame;
