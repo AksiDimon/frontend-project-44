@@ -15,11 +15,11 @@ What it is? Mind Games is a set of five console games based on popular mobile br
 ## Install
 You need to run the following commands in the terminal:
 
-"git clone [you can install this](https://github.com/AksiDimon/frontend-project-44)
-`cd frontend-project-44`
-`make install`
-`npm install`
-npm link"
+`git clone` [This link](https://github.com/AksiDimon/frontend-project-44);
+`cd frontend-project-44`;
+`make install`;
+`npm install`;
+`npm link`;
 
 # Games
 
