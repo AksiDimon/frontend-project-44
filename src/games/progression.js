@@ -1,5 +1,5 @@
 import getRandomNumber from '../utils.js';
-import createForAllGame from '../index.js';
+import runGames from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
@@ -17,10 +17,10 @@ const userNumber = () => {
   arr[hiddenNumber] = '..';
   const question = arr.join(' ');
 
-  return [question, unknowCloseNum];
+  return [question, String(unknowCloseNum)];
 };
 
 const playGame = () => {
-  createForAllGame(gameRules, userNumber);
+  runGames(gameRules, userNumber);
 };
 export default playGame;

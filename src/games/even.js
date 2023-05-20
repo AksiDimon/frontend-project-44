@@ -1,4 +1,4 @@
-import createForAllGame from '../index.js';
+import runGames from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -9,9 +9,9 @@ const answer = (number) => {
 const userNumber = () => {
   const number = getRandomNumber(1, 100);
   const correctAnswer = answer(number);
-  return [number, correctAnswer];
+  return [number, String(correctAnswer)];
 };
 const playGame = () => {
-  createForAllGame(gameRules, userNumber);
+  runGames(gameRules, userNumber);
 };
 export default playGame;

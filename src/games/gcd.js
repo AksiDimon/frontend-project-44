@@ -1,4 +1,4 @@
-import createForAllGame from '../index.js';
+import runGames from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
@@ -15,10 +15,10 @@ const userNumber = () => {
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
   const answer = `${getGcd(number1, number2)}`;
-  return [question, answer.toString()];
+  return [question, String(answer)];
 };
 
 const playGame = () => {
-  createForAllGame(gameRules, userNumber);
+  runGames(gameRules, userNumber);
 };
 export default playGame;

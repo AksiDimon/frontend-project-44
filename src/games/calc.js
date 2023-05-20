@@ -1,4 +1,4 @@
-import createForAllGame from '../index.js';
+import runGames from '../index.js';
 import getRandomNumber from '../utils.js';
 
 const gameRules = 'What is the result of the expression?';
@@ -29,10 +29,10 @@ const userNumber = () => {
   const randomSign = arr[index];
   const question = `${number1} ${randomSign} ${number2}`;
   const result = calc(randomSign, number1, number2);
-  return [question, result];
+  return [question, String(result)];
 };
 
 const playGame = () => {
-  createForAllGame(gameRules, userNumber);
+  runGames(gameRules, userNumber);
 };
 export default playGame;
