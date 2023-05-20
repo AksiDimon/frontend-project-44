@@ -12,18 +12,18 @@ What it is? Mind Games is a set of five console games based on popular mobile br
 * Progression. Search for missing numbers by number order;
 * Prime numbers.
 
-### Install
+## Install
 You need to run the following commands in the terminal:
 
-`git clone git@github.com:dmitry1178/frontend-project-44.git
-cd frontend-project-44
-make install
-npm install
-npm link`
+`git clone git@github.com:dmitry1178/frontend-project-44.git`
+`cd frontend-project-44`
+`make install`
+`npm install`
+`npm link`
 
-## Games
+# Games
 
-### 1. Brain-even 
+## 1. Brain-even 
 
 You need to determine if the number is even or not.
 
@@ -53,7 +53,7 @@ You need to determine the common divisor of two numbers.
 
 **Starting the game:**
 
-brain-gcd
+`brain-gcd`
 
 **Presentation Asciinema:**
 
@@ -65,7 +65,7 @@ You need to calculate what number is "hidden" in an arithmetic progression.
 
 **Starting the game:**
 
-brain-progression
+`brain-progression`
 
 **Presentation Asciinema:**
 
@@ -77,7 +77,7 @@ You need to determine if a number is prime (divisible only by 1 and itself witho
 
 **Starting the game:**
 
-brain-prime
+`brain-prime`
 
 **Presentation Asciinema:**
 
