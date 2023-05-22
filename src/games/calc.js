@@ -32,7 +32,7 @@ const userNumber = () => {
   return [question, String(result)];
 };
 
-const playGame = () => {
+const playCalcGame = () => {
   runGames(gameRules, userNumber);
 };
-export default playGame;
+export default playCalcGame;

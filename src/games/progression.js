@@ -20,7 +20,7 @@ const userNumber = () => {
   return [question, String(unknowCloseNum)];
 };
 
-const playGame = () => {
+const playProgressionGame = () => {
   runGames(gameRules, userNumber);
 };
-export default playGame;
+export default playProgressionGame;

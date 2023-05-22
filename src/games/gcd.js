@@ -18,7 +18,7 @@ const userNumber = () => {
   return [question, String(answer)];
 };
 
-const playGame = () => {
+const playGcdGame = () => {
   runGames(gameRules, userNumber);
 };
-export default playGame;
+export default playGcdGame;

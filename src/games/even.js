@@ -11,7 +11,7 @@ const userNumber = () => {
   const correctAnswer = answer(number);
   return [number, String(correctAnswer)];
 };
-const playGame = () => {
+const playEvenGame = () => {
   runGames(gameRules, userNumber);
 };
-export default playGame;
+export default playEvenGame;
