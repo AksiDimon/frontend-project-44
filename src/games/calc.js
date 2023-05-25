@@ -4,24 +4,19 @@ import getRandomNumber from '../utils.js';
 const gameRules = 'What is the result of the expression?';
 
 const calc = (randomSign, number1, number2) => {
-  let result = 0;
   switch (randomSign) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
       throw new Error(`Unknown order state: '${randomSign}'!`);
   }
-  return result;
 };
 
-const userNumber = () => {
+const logicGame = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const arr = ['+', '-', '*'];
@@ -33,6 +28,6 @@ const userNumber = () => {
 };
 
 const playCalcGame = () => {
-  runGames(gameRules, userNumber);
+  runGames(gameRules, logicGame);
 };
 export default playCalcGame;

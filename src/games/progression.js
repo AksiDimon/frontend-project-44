@@ -3,7 +3,7 @@ import runGames from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const userNumber = () => {
+const logicGame = () => {
   const arr = [];
   const length = getRandomNumber(1, 100); // задаем окуда начнутя числа
   const randomStep = getRandomNumber(2, 5); // задаем число прогрессии
@@ -21,6 +21,6 @@ const userNumber = () => {
 };
 
 const playProgressionGame = () => {
-  runGames(gameRules, userNumber);
+  runGames(gameRules, logicGame);
 };
 export default playProgressionGame;
