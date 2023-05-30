@@ -10,7 +10,7 @@ const getGcd = (num1, num2) => {
   return getGcd(num2, num1 % num2);
 };
 
-const logicGame = () => {
+const getLogicOfGame = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
@@ -19,6 +19,6 @@ const logicGame = () => {
 };
 
 const playGcdGame = () => {
-  runGames(gameRules, logicGame);
+  runGames(gameRules, getLogicOfGame);
 };
 export default playGcdGame;

@@ -12,13 +12,13 @@ const isPrime = (number) => {
   return true;
 };
 
-const logicGame = () => {
+const getLogicOfGame = () => {
   const number = getRandomNumber(2, 100);
   const answer = isPrime(number) ? 'yes' : 'no';
   return [number, String(answer)];
 };
 
 const playPrimeGame = () => {
-  runGames(gameRules, logicGame);
+  runGames(gameRules, getLogicOfGame);
 };
 export default playPrimeGame;
